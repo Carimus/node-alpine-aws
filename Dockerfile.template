@@ -1,7 +1,7 @@
-FROM node:alpine
+FROM __BASE_IMAGE__
 
 # Install build packages we want
-RUN apk add -Uuv git less zip build-base bash gettext \
+RUN apk add -Uuv git less zip build-base bash gettext curl \
   && rm -rf /var/cache/apk/*
 
 # Install awscli
