@@ -12,7 +12,6 @@ primarily including the `aws` sdk and command line tools.
  - `groff`
  - `less`
  - `python`
- - `py-pip`
  - `zip`
  - `build-base`
  - `bash`
@@ -21,6 +20,11 @@ primarily including the `aws` sdk and command line tools.
 ### `pip`
 
  - `aws`
+ - `s3`
+
+### Other
+
+ - `wait-for-it`
 
 ## Updates
 

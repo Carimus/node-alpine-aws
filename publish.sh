@@ -16,8 +16,8 @@ if [[ -n "$GIT_STATUS" ]]; then
 fi
 
 echo "Will build images with the following tags:"
-echo -e "Based on node:10-alpine:\t$NODE10_TAG, latest, $GIT_SHORT_COMMIT, $GIT_SHORT_COMMIT-$NODE10_TAG"
-echo -e "Based on node:8-alpine:\t$NODE8_TAG, $GIT_SHORT_COMMIT-$NODE8_TAG"
+echo -e "Based on node:10-alpine:    $NODE10_TAG, latest, $GIT_SHORT_COMMIT, $GIT_SHORT_COMMIT-$NODE10_TAG"
+echo -e "Based on node:8-alpine:     $NODE8_TAG, $GIT_SHORT_COMMIT-$NODE8_TAG"
 echo
 
 echo "Based on node:10-alpine (default image):"
