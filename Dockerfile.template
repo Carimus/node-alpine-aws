@@ -10,10 +10,16 @@ RUN apk -v --update add \
         py-pip \
         groff \
         mailcap \
-        && \
+    && \
     pip install --upgrade awscli==1.14.5 s3cmd==2.0.1 python-magic && \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
+
+# Install sentry-cli
+RUN npm install \
+        @sentry/cli \
+    && \
+    npm cache clean --force
 
 # Install wait-for-it
 RUN curl https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh > /opt/wait-for-it.sh \

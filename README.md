@@ -17,6 +17,9 @@ primarily including the `aws` sdk and command line tools.
  - `bash`
  - `gettext` (e.g. `envsubst`, etc.)
 
+### `npm`
+ - `@sentry/cli`
+
 ### `pip`
 
  - `aws`
@@ -32,7 +35,7 @@ The general workflow is as such:
 
  1. Update the [`Dockerfile.template`](./Dockerfile.template) as necessary.
  2. Run [`update.sh`](./update.sh) to update the node-version-specific `Dockerfile`s.
- 3. Build and test locally (e.g. `build -t carimus/node-alpine-aws/test:node8 -f ./node8/Dockerfile .`)
+ 3. Build and test locally (e.g. `docker build -t carimus/node-alpine-aws/test:node8 -f ./node8/Dockerfile .`)
  4. Add and commit the changes
  5. Run [`publish.sh`](./publish.sh) to build all images and push them up to docker hub. This will
     overwrite existing images there so be sure the images are backwards compatible.
