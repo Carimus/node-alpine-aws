@@ -17,9 +17,6 @@ primarily including the `aws` sdk and command line tools.
  - `bash`
  - `gettext` (e.g. `envsubst`, etc.)
 
-### `npm`
- - `@sentry/cli`
-
 ### `pip`
 
  - `aws`
@@ -28,6 +25,7 @@ primarily including the `aws` sdk and command line tools.
 ### Other
 
  - `wait-for-it`
+ - `sentry-cli`
 
 ## Updates
 
