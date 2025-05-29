@@ -46,19 +46,14 @@ docker build -t $REPO_NAME:$NODE10_TAG \
   -f ./node10/Dockerfile \
   .
 
-echo
-
 echo "Based on node:8-alpine:"
-
 docker build -t $REPO_NAME:$NODE8_TAG \
   -t $REPO_NAME:$GIT_SHORT_COMMIT-$NODE8_TAG \
   -f ./node8/Dockerfile \
   .
 
 echo
-
 echo "Pushing images to docker hub:"
-
 docker push $REPO_NAME:latest
 docker push $REPO_NAME:$GIT_SHORT_COMMIT
 
