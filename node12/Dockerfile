@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:12-alpine
 
 # Install build packages we want
 RUN apk add -Uuv git less zip build-base bash gettext curl \
