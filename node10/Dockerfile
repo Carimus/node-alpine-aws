@@ -6,7 +6,7 @@ RUN apk add -Uuv git less zip build-base bash gettext curl \
 
 # Install awscli
 RUN apk -v --update add \
-        python \
+        python3 \
         py-pip \
         groff \
         mailcap \
