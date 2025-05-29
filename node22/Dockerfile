@@ -17,9 +17,7 @@ RUN apk add -Uuv \
     && rm -rf /var/cache/apk/*
 
 # Install sentry-cli
-RUN npm install -g \
-        @sentry/cli \
-    && npm cache clean --force
+RUN curl -sL https://sentry.io/get-cli/ | bash
 
 # Install wait-for-it
 RUN curl https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh > /opt/wait-for-it.sh \
